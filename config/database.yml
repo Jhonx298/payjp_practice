@@ -54,4 +54,4 @@ test:
 production:
   <<: *default
   adapter: postgresql
-  password: <%= ENV['PAYJP_PRACTICE_DATABASE_PASSWORD'] %>
+  url: <%= ENV['DATABASE_URL'] %>
